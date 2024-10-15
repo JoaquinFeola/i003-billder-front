@@ -83,7 +83,7 @@ export const ProjectInfoPage = () => {
               ? (
                 <NotDataCreated text="Aún no creaste documentos" />
               ) : (
-                budgets.map((d, i) => <DocumentItem key={i} title="Presupuesto" status={1} />)
+                budgets.map((_, i) => <DocumentItem key={i} title="Presupuesto" status={1} />)
               )
           }
         </div>
